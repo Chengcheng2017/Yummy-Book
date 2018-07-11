@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.font-descrip {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+div {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #02040F;
+    height: 100%;
+}

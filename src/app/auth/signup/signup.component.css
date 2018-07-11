@@ -1,0 +1,19 @@
+.container {
+  min-height: 700px;
+  height: auto !important; 
+  height: 100%;
+  padding-top: 80px;
+}
+
+button {
+  background: #840032;
+  color: #fff;
+}
+
+button:hover {
+    background: #b40347;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

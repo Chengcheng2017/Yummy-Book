@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+  <a routerLink="/" class="navbar-brand">Yummy Book</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/recipes">Recipes</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <ng-template [ngIf]="!isAuthenticated()">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signup">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signin">Login</a>
+        </li>
+      </ng-template>
+      <li class="nav-item dropdown" appDropdown *ngIf="isAuthenticated()">
+        <a style="cursor: pointer;" class="nav-link dropdown-toggle" data-toggle="dropdown">Welcom, {{ name }}
+          <span class="caret"></span>
+        </a>
+        <div class="dropdown-menu">
+          <li style="cursor: pointer;" class="dropdown-item" routerLink="/recipes/myrecipes">My recipes</li>
+          <li style="cursor: pointer;" class="dropdown-item" routerLink="/recipes/myfavorites">My favorites</li>
+          <li role="separator" class="divider"></li>
+          <li style="cursor: pointer;" class="dropdown-item" (click)="onLogout()">Logout</li>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

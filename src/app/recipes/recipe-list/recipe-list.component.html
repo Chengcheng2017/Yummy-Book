@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light">
+    <button *ngIf="isAuthenticated()" class="btn btn-outline-secondary" (click)="onNewRecipe()">New Recipe</button>
+    <form class="form-inline" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" 
+      name ="searchWord" ngModel required>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+<hr>
+<div class="row" style="margin-bottom: 10px">
+  <div class="col-xs-12">
+    <div class="card-columns">
+      <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl.data" [key]="recipeEl.key"></app-recipe-item>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="card m-auto" style="width: 400px;">
+      <div class="card-body p-5">
+        <h3 class="card-title text-center">Sign up to create more</h3>
+        <div class="card-subtitle mb-2 text-muted text-center">Build your own yummy book with a free account</div>
+        <form (ngSubmit)="onSignup(f)" #f="ngForm">
+          <div class="form-group">
+            <input type="text" id="userName" name="userName" ngModel class="form-control" placeholder="User Name">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Password">
+          </div>
+          <div class="form-group" [hidden]="type === null">
+            <div class="alert" [ngClass]="{'alert-success': type === 'success', 'alert-danger': type === 'error'}">
+              {{ message }}
+            </div>
+          </div>
+          <button class="btn btn-outline-* btn-block" type="submit" [disabled]="!f.valid">Sign Up</button>
+        </form>
+        <hr>
+        <h6 class="text-muted text-center">Already a member?
+          <a routerLink="/signin">Log in</a>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>

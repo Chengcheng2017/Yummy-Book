@@ -1,0 +1,8 @@
+<div class="card" [routerLink]="[key]" routerLinkActive="active">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="card-img-top">
+    <div class="card-body">
+      <h4 class="card-title font">{{ recipe.name }}</h4>
+      <p class="card-text font-descrip">{{ recipe.description }}</p>
+    </div>
+    <div class="card-footer text-muted font">Created by: {{ recipe.uploadedBy.name }}</div>
+</div>

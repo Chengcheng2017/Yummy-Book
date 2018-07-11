@@ -1,0 +1,242 @@
+#home-section {
+    background: url(../../../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    color: #FFF;
+  }
+  
+  #home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #home-section .home-inner {
+    padding-top: 150px;
+  }
+
+  #welcome-anim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #welcome-anim, span {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .welcome {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: textBig 3s 1;
+  }
+
+  .title {
+    font-size: 30px;
+    color: #E5DADA;
+    animation: textSmall 3s 1;
+  }
+
+  @keyframes textBigXS {
+    0%{
+      color: #840032;
+      margin-bottom: -25px;
+    }
+    30%{
+      letter-spacing: 6px;
+      margin-bottom: -25px;
+    }
+    85%{
+      letter-spacing: 2px;
+      margin-bottom: -25px;
+    }
+  }
+
+  @keyframes textBigS {
+    0%{
+      color: #840032;
+      margin-bottom: -30px;
+    }
+    30%{
+      letter-spacing: 11px;
+      margin-bottom: -30px;
+    }
+    85%{
+      letter-spacing: 3px;
+      margin-bottom: -30px;
+    }
+  }
+
+  @keyframes textBigM {
+    0%{
+      color: #840032;
+      margin-bottom: -30px;
+    }
+    30%{
+      letter-spacing: 17px;
+      margin-bottom: -30px;
+    }
+    85%{
+      letter-spacing: 6px;
+      margin-bottom: -30px;
+    }
+  }
+
+  @keyframes textBigL {
+    0%{
+      color: #840032;
+      margin-bottom: -35px;
+    }
+    30%{
+      letter-spacing: 23px;
+      margin-bottom: -35px;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: -35px;
+    }
+  }
+
+  @keyframes textBigXL {
+    0%{
+      color: #840032;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 30px;
+      margin-bottom: -40px;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+  }
+
+  @keyframes textSmall {
+    0%{
+      visibility: hidden;
+    }
+    85%{
+      visibility: hidden;
+    }
+  }
+
+  #explore-recipe-section {
+      background: #002642;
+      color: #FFF;
+  }
+
+  #shopping-list-section {
+      background: #840032;
+      color: #fff;
+  }
+
+
+  @media (max-width: 520px)
+{
+  .welcome {
+    font-size: 28px;
+    letter-spacing: 5px;
+    animation: textBigXS 3s 1;
+  }
+  .title {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 521px) and (max-width: 579px)
+{
+  .welcome {
+    font-size: 29px;
+    letter-spacing: 6px;
+    animation: textBigS 3s 1;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 700px)
+{
+  .welcome {
+    font-size: 32px;
+    letter-spacing: 7px;
+    animation: textBigS 3s 1;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 720px)
+{
+  .welcome {
+    font-size: 35px;
+    letter-spacing: 7px;
+    animation: textBigM 3s 1;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 882px)
+{
+  .welcome {
+    font-size: 35px;
+    letter-spacing: 8px;
+    animation: textBigM 3s 1;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 883px) and (max-width: 1049px)
+{
+  .welcome {
+    font-size: 40px;
+    letter-spacing: 8px;
+    animation: textBigL 3s 1;
+  }
+  .title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1119px)
+{
+  .welcome {
+    font-size: 42px;
+    letter-spacing: 8px;
+    animation: textBigXL 3s 1;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1120px)
+{
+  .welcome {
+    font-size: 48px;
+    letter-spacing: 8px;
+    animation: textBigXL 3s 1;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+  
+      
