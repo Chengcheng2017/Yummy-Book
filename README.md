@@ -3,7 +3,7 @@
 ## About
 This project build a recipe website that allow users to view tons of recipes, and also creat and edit their own recipes. They can favorite recipes and add ingredients to their shopping list.
 
-click this [link](http://angular-yummy-book-deployment.s3-website-us-west-1.amazonaws.com/recipes/myrecipes) to view the website 
+click this [link](http://angular-yummy-book-deployment.s3-website-us-west-1.amazonaws.com/) to view the website 
 
 ## Build with
 - Angular 6
